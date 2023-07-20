@@ -1,0 +1,77 @@
+/* ****Fonts***** */
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Lato-Regular.ttf");
+}
+
+/************** ----Custom Properties---- ************/
+:root {
+  --first-color: #cccccc;
+  --second-color: #000e8a;
+  --white-color: #ffffff;
+  --white-alpha-color: #fff8;
+  --black-color: #000000;
+  --black-alpha-color: #0005;
+  --third-color: #00fff0;
+  --third-alpha-color: #00fff0f7;
+  --link-color: #509ee3;
+  --text-color: #34405f;
+  --green-light: #c7ffd3;
+  --max-width: 1200px;
+  --font: "Lato", sans-serif;
+  --header-height: 110px;
+}
+
+/************** ----Reset---- ************/
+html {
+  box-sizing: border-box;
+  font-family: var(--font);
+  font-size: 18px;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: var(--font) !important;
+  color: var(--text-color) !important;
+  background-color: #f5f8ff !important;
+}
+/* *****Utilities****** */
+.bg-green-light {
+  background-color: var(--green-light);
+}
+
+/* Busqueda pais */
+
+.list-pais {
+  width: 35vw !important;
+}
+
+/* Check rounded */
+.check-rounded {
+  width: 25px;
+  height: 25px;
+}
+
+/* Diseño Movil */
+
+@media screen and (max-width: 800px) {
+  .list-pais {
+    width: 80vw !important;
+  }
+
+  /* #btn-make-recharge {
+    position: fixed;
+    bottom: 10px;
+    right: 0px;
+    left: 0px;
+    z-index: 999;
+    padding: 20px;
+  } */
+}

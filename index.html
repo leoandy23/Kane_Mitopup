@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width , initial-scale=1.0" />
+    <title>Mitopup</title>
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Bootstrap Personalizado -->
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css"
+      integrity="sha512-ZnR2wlLbSbr8/c9AgLg3jQPAattCUImNsae6NHYnS9KrIwRdcY9DxFotXhNAKIKbAXlRnujIqUWoXXwqyFOeIQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <!-- Navbar Start -->
+
+    <nav
+      class="navbar bg-white navbar-expand-lg border-bottom position-sticky top-0 z-3 p-0">
+      <div class="container-fluid">
+        <div class="d-flex align-items-center">
+          <a class="navbar-brand" href="#">
+            <img src="img/Logo.png" alt="LogoMitopup" class="mx-5 img-fluid" />
+          </a>
+          <button
+            class="navbar-toggler border-0"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars text-primary"></i>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul
+            class="navbar-nav m-0 me-md-auto mb-2 mb-lg-0 w-100 justify-content-end px-md-5">
+            <li class="nav-item mx-1">
+              <a class="nav-link text-primary fw-semibold" href="#">
+                <i class="fa-regular fa-message"></i>
+                Ayuda
+              </a>
+            </li>
+            <li class="nav-item mx-1">
+              <a class="nav-link text-primary fw-semibold" href="#">
+                <i class="bi bi-globe"></i>
+                ES (MX)
+                <i class="fa-solid fa-angle-down"></i>
+              </a>
+            </li>
+            <li class="nav-item my-1 mx-1">
+              <a href="#" class="btn btn-primary">Registrarme</a>
+            </li>
+            <li class="nav-item my-1 mx-1 me-md-5">
+              <a href="#" class="btn btn-outline-primary">Iniciar Sesión</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Quick Presentation Start -->
+    <div class="container">
+      <div class="row my-5">
+        <div class="col-md-6 my-3">
+          <h2 class="text-primary fw-bolder text-justify">
+            Recarga el celular de tus seres queridos de manera rápida, segura y
+            sencilla
+          </h2>
+          <div class="shadow bg-white rounded-3 p-4">
+            <p>¿A quién le vas a hacer una recarga?</p>
+
+            <span><small>Celular de la recarga</small></span>
+            <div class="row my-2">
+              <div class="col-5 col-md-3 mx-0 pe-0">
+                <div class="dropdown w-100 pe-2">
+                  <button
+                    class="btn btn-outline-secondary py-1 border-light-subtle dropdown-toggle border-2 w-100 text-black"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    +52 <img src="img/flag-mx.png" alt="flag-mx" />
+                  </button>
+                  <ul class="dropdown-menu list-pais">
+                    <div class="m-2">
+                      <input
+                        type="search"
+                        name=""
+                        id=""
+                        placeholder="Buscar pais"
+                        class="border-light-subtle rounded w-100 p-2" />
+                    </div>
+                    <li class="border-bottom">
+                      <a
+                        class="dropdown-item d-flex justify-content-between"
+                        href="#">
+                        <span
+                          ><img src="img/flag-mx.png" alt="flag-mx" />
+                          México</span
+                        >
+                        <span>+52</span>
+                      </a>
+                    </li>
+                    <li class="border-bottom">
+                      <a
+                        class="dropdown-item d-flex justify-content-between"
+                        href="#">
+                        <span
+                          ><img src="img/flag-mx.png" alt="flag-mx" />
+                          México</span
+                        >
+                        <span>+52</span>
+                      </a>
+                    </li>
+                    <li class="border-bottom">
+                      <a
+                        class="dropdown-item d-flex justify-content-between"
+                        href="#">
+                        <span
+                          ><img src="img/flag-mx.png" alt="flag-mx" />
+                          México</span
+                        >
+                        <span>+52</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-7 col-md-9 pl-0">
+                <input
+                  type="text"
+                  class="border border-2 rounded border-light-subtle p-1 pb-2 w-100"
+                  placeholder="Introduce el número" />
+              </div>
+            </div>
+            <div class="w-100 my-3">
+              <div id="btn-make-recharge">
+                <button class="btn btn-primary w-100 fw-medium">
+                  Comenzar recarga
+                </button>
+              </div>
+            </div>
+            <div class="d-flex align-items-center my-2">
+              <span class="border border-light-subtle w-50 me-2"></span>
+              <span class="text-light"
+                ><i class="fa-regular fa-circle fa-2xs"></i
+              ></span>
+              <span class="border border-light-subtle w-50 mx-2 me-0"></span>
+            </div>
+            <div class="w-100 my-3">
+              <button class="btn btn-outline-primary w-100 fw-medium my-2">
+                Registrarme
+              </button>
+              <button
+                class="btn btn-outline-primary w-100 fw-medium border-0 my-2">
+                Iniciar Sesion
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 my-3">
+          <img
+            src="img/phone-messages.png"
+            alt="phone-messages"
+            class="img-fluid" />
+        </div>
+      </div>
+    </div>
+    <!-- Quick Presentation End -->
+
+    <!-- App Section Start -->
+    <div
+      class="w-100 bg-primary py-5 d-flex flex-column align-items-center text-center">
+      <h2 class="text-white">Recarga rápido con nuestra app</h2>
+      <p class="text-white">Obtén 5.00$ de descuento en tu primera recarga.</p>
+      <div class="d-flex flex-column flex-md-row justify-content-between">
+        <a href="#" class="btn btn-light m-1">
+          <p class="d-flex p-0 m-0 align-items-center justify-content-between">
+            <i class="fab fa-google-play fa-2x me-2"></i>
+            <span>
+              <small class="d-block">GET IT ON</small>
+              <small class="d-block"><b>Google Play</b></small>
+            </span>
+          </p>
+        </a>
+        <a href="#" class="btn btn-light m-1">
+          <p class="d-flex p-0 m-0 align-items-center">
+            <i class="fab fa-apple fa-2x me-2"></i>
+            <span>
+              <small class="d-block">Download on the</small>
+              <small class="d-block"><b>App Store</b></small>
+            </span>
+          </p>
+        </a>
+      </div>
+    </div>
+    <!-- App Section End -->
+
+    <!-- What Mitopup Start -->
+    <div class="w-100 py-5 bg-white">
+      <div class="container text-md-center">
+        <h3 class="text-primary fw-bold">¿Por qué Mitopup?</h3>
+        <p>
+          Nuestra plataforma te permite estar conectado con los que más quieres
+        </p>
+        <div class="row justify-content-around">
+          <div class="col-12 col-md-4 my-2">
+            <div
+              class="p-3 shadow rounded bg-white d-flex flex-column align-items-center">
+              <img src="img/IconoTarjetas.png" alt="" />
+              <p class="fw-bolder">Fácil y rápido</p>
+              <p class="text-center">
+                Haz recargas a los celulares de tus seres queridos en pocos
+                minutos.
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 my-2">
+            <div
+              class="p-3 shadow rounded bg-white d-flex flex-column align-items-center">
+              <img src="img/IconoTiro.png" alt="" />
+              <p class="fw-bolder">Seguro y fiable</p>
+              <p class="text-center">
+                Los pagos se hacen a través de un entorno protegido y seguro.
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 my-2">
+            <div
+              class="p-3 shadow rounded bg-white d-flex flex-column align-items-center">
+              <img src="img/IconoEnviar.png" alt="" />
+              <p class="fw-bolder">Servicio internacional</p>
+              <p class="text-center">
+                Envía recargas al celular de cualquier país estés donde estés.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- What Mitopup End -->
+
+    <!-- How It Works Start -->
+    <div class="w-100 py-5">
+      <div class="container">
+        <h3 class="text-primary fw-bold">¿Cómo funciona?</h3>
+        <p class="mb-5">
+          Recarga el celular de tus familiares a través de un proceso sencillo:
+        </p>
+        <div class="row align-items-center px-3">
+          <div class="col-12 col-md-6">
+            <div class="btn-group bg-light p-2 w-100">
+              <button
+                id="btn-section1"
+                class="btn bg-white text-dark rounded"
+                onclick="showSection(1)">
+                No estoy registrado
+              </button>
+              <button
+                id="btn-section2"
+                class="btn bg-light rounded text-dark text-opacity-25"
+                onclick="showSection(2)">
+                Estoy registrado
+              </button>
+            </div>
+            <div id="section1" class="mt-5">
+              <div class="row bg-white rounded p-3 my-3 shadow-sm">
+                <div class="col-2 col-md-1">
+                  <i class="bi bi-1-circle-fill text-primary fs-3"></i>
+                </div>
+                <div class="col-10 col-md-11">
+                  <p class="fw-bolder m-0">Indica el celular de la recarga</p>
+                  <p>
+                    Indica el contacto o introduce el número del celular al que
+                    vas a enviar la recarga.
+                  </p>
+                </div>
+              </div>
+
+              <div class="row bg-white rounded p-3 my-3 shadow-sm">
+                <div class="col-2 col-md-1">
+                  <i class="bi bi-2-circle-fill text-primary fs-3"></i>
+                </div>
+                <div class="col-10 col-md-11">
+                  <p class="fw-bolder m-0">Escoge el tipo de recarga</p>
+                  <p>
+                    Selecciona el importe o el plan para recargar que mejor se
+                    adapte a tu familiar.
+                  </p>
+                </div>
+              </div>
+
+              <div class="row bg-white rounded p-3 my-3 shadow-sm">
+                <div class="col-2 col-md-1">
+                  <i class="bi bi-3-circle-fill text-primary fs-3"></i>
+                </div>
+                <div class="col-10 col-md-11">
+                  <p class="fw-bolder m-0">Indica tu correo electrónico</p>
+                  <p>
+                    Introduce tu email para enviarte el recibo de la recarga.
+                  </p>
+                </div>
+              </div>
+
+              <div class="row bg-white rounded p-3 my-3 shadow-sm">
+                <div class="col-2 col-md-1">
+                  <i class="bi bi-4-circle-fill text-primary fs-3"></i>
+                </div>
+                <div class="col-10 col-md-11">
+                  <p class="fw-bolder m-0">Indica el método de pago</p>
+                  <p>
+                    Selecciona el método de pago con el que deseas abonar la
+                    compra, introduce los datos para pagar y ¡listo!
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div id="section2" class="mt-5 d-none">
+              <div class="row bg-white rounded p-3 my-3 shadow-sm">
+                <div class="col-2 col-md-1">
+                  <i class="bi bi-1-circle-fill text-primary fs-3"></i>
+                </div>
+                <div class="col-10 col-md-11">
+                  <p class="fw-bolder m-0">Indica el celular de la recarga</p>
+                  <p>
+                    Indica el contacto o introduce el número del celular al que
+                    vas a enviar la recarga.
+                  </p>
+                </div>
+              </div>
+
+              <div class="row bg-white rounded p-3 my-3 shadow-sm">
+                <div class="col-2 col-md-1">
+                  <i class="bi bi-2-circle-fill text-primary fs-3"></i>
+                </div>
+                <div class="col-10 col-md-11">
+                  <p class="fw-bolder m-0">Escoge el tipo de recarga</p>
+                  <p>
+                    Selecciona el importe o el plan para recargar que mejor se
+                    adapte a tu familiar.
+                  </p>
+                </div>
+              </div>
+
+              <div class="row bg-white rounded p-3 my-3 shadow-sm">
+                <div class="col-2 col-md-1">
+                  <i class="bi bi-3-circle-fill text-primary fs-3"></i>
+                </div>
+                <div class="col-10 col-md-11">
+                  <p class="fw-bolder m-0">Programa tu recarga (o no)</p>
+                  <p>
+                    Indica si quieres que la recarga se haga cada semana,
+                    quincena o mes. Tú decides, es opcional.
+                  </p>
+                </div>
+              </div>
+
+              <div class="row bg-white rounded p-3 my-3 shadow-sm">
+                <div class="col-2 col-md-1">
+                  <i class="bi bi-4-circle-fill text-primary fs-3"></i>
+                </div>
+                <div class="col-10 col-md-11">
+                  <p class="fw-bolder m-0">Indica el método de pago</p>
+                  <p>
+                    Selecciona el método de pago con el que deseas abonar la
+                    compra, introduce los datos para pagar y ¡listo!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="mx-auto w-75">
+              <img src="img/HowWork.png" alt="" class="img-fluid" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- How It Works End -->
+
+    <!-- FAQ Start -->
+    <div class="w-100 bg-white py-5">
+      <div class="container">
+        <h3 class="fw-bold text-primary">Preguntas frecuentes</h3>
+        <p>
+          Revisa las preguntas frecuentes si quieres obtener más información.
+        </p>
+
+        <div
+          class="accordion accordion-flush p-0 m-0"
+          id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed fs-6"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne"
+                aria-expanded="false"
+                aria-controls="flush-collapseOne">
+                ¿Puedo hacer recargas a cualquier país?
+              </button>
+            </h2>
+            <div
+              id="flush-collapseOne"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body text-light-emphasis">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio
+                ipsa blanditiis velit rerum qui voluptatum ad fuga quia deserunt
+                voluptates? Exercitationem laboriosam eum quis recusandae,
+                officia vitae rerum ad natus?
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo"
+                aria-expanded="false"
+                aria-controls="flush-collapseTwo">
+                ¿Puedo hacer recargas a cualquier país?
+              </button>
+            </h2>
+            <div
+              id="flush-collapseTwo"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body text-light-emphasis">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima
+                necessitatibus quae soluta. Totam maxime, architecto quam
+                perferendis pariatur harum recusandae consequatur! Expedita quam
+                velit cum in iure commodi accusantium officia!
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseThree"
+                aria-expanded="false"
+                aria-controls="flush-collapseThree">
+                ¿Puedo hacer recargas a cualquier país?
+              </button>
+            </h2>
+            <div
+              id="flush-collapseThree"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body text-light-emphasis">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe
+                reprehenderit odio aliquam qui ex totam, provident aspernatur ut
+                incidunt sequi eveniet mollitia perferendis? Ipsam nobis
+                repellendus tempora facere quaerat unde.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- FAQ End -->
+
+    <!-- Footer Start -->
+    <footer class="w-100 bg-primary px-5 py-3">
+      <div class="row">
+        <div class="col-12 col-md-6 text-white text-center text-md-start">
+          <img src="img/LogoLight.png" alt="Logo" class="img-fluid my-2" />
+          <p class="my-2">Tus seres queridos siempre conectados.</p>
+          <div class="my-2">
+            <i class="fab fa-instagram fa-2x"></i>
+            <i class="fab fa-facebook fa-2x"></i>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 text-white text-center text-md-start">
+          <h3 class="my-2">Legal</h3>
+          <a href="#" class="text-white text-decoration-none my-2 d-block"
+            >Política de privacidad</a
+          >
+          <a href="#" class="text-white text-decoration-none my-2 d-block"
+            >Política de cookies</a
+          >
+        </div>
+      </div>
+    </footer>
+    <!-- Footer End -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+      integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"></script>
+    <script src="lib/bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

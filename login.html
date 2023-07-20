@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width , initial-scale=1.0" />
+    <title>Mitopup Login</title>
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Bootstrap Personalizado -->
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css"
+      integrity="sha512-ZnR2wlLbSbr8/c9AgLg3jQPAattCUImNsae6NHYnS9KrIwRdcY9DxFotXhNAKIKbAXlRnujIqUWoXXwqyFOeIQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <!-- Navbar Start -->
+
+    <nav
+      class="navbar bg-white navbar-expand-lg border-bottom position-sticky top-0 z-3 p-0">
+      <div class="container-fluid">
+        <div class="d-flex align-items-center">
+          <a class="navbar-brand" href="#">
+            <img src="img/Logo.png" alt="LogoMitopup" class="mx-5 img-fluid" />
+          </a>
+          <button
+            class="navbar-toggler border-0"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars text-primary"></i>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul
+            class="navbar-nav m-0 me-md-auto mb-2 mb-lg-0 w-100 justify-content-end px-md-5">
+            <li class="nav-item mx-1">
+              <a class="nav-link text-primary fw-semibold" href="#">
+                <i class="fa-regular fa-message"></i>
+                Ayuda
+              </a>
+            </li>
+            <li class="nav-item mx-1">
+              <a class="nav-link text-primary fw-semibold" href="#">
+                <i class="bi bi-globe"></i>
+                ES (MX)
+                <i class="fa-solid fa-angle-down"></i>
+              </a>
+            </li>
+            <li class="nav-item my-1 mx-1">
+              <a href="#" class="btn btn-primary">Registrarme</a>
+            </li>
+            <li class="nav-item my-1 mx-1 me-md-5">
+              <a href="#" class="btn btn-outline-primary">Iniciar Sesión</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Quick Presentation Start -->
+    <div class="container">
+      <div class="row my-5">
+        <div class="col-md-6 my-3">
+          <img
+            src="img/phone-messages.png"
+            alt="phone-messages"
+            class="img-fluid" />
+        </div>
+
+        <!-- Phone Number Start -->
+        <div class="col-md-6 my-3" id="form-phone-number">
+          <h2 class="text-primary fw-bolder text-justify">
+            Bienvenid@ a Mitopup
+          </h2>
+          <div class="shadow bg-white rounded-3 p-4">
+            <p>Introduce tus datos de acceso:</p>
+
+            <span><small>Tu número de celular</small></span>
+            <div class="row my-2">
+              <div class="col-5 col-md-3 mx-0 pe-0">
+                <div class="dropdown w-100 pe-2">
+                  <button
+                    class="btn btn-outline-secondary py-1 border-light-subtle dropdown-toggle border-2 w-100 text-black"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    +52 <img src="img/flag-mx.png" alt="flag-mx" />
+                  </button>
+                  <ul class="dropdown-menu list-pais">
+                    <div class="m-2">
+                      <input
+                        type="search"
+                        name=""
+                        id=""
+                        placeholder="Buscar pais"
+                        class="border-light-subtle rounded w-100 p-2" />
+                    </div>
+                    <li class="border-bottom">
+                      <a
+                        class="dropdown-item d-flex justify-content-between"
+                        href="#">
+                        <span
+                          ><img src="img/flag-mx.png" alt="flag-mx" />
+                          México</span
+                        >
+                        <span>+52</span>
+                      </a>
+                    </li>
+                    <li class="border-bottom">
+                      <a
+                        class="dropdown-item d-flex justify-content-between"
+                        href="#">
+                        <span
+                          ><img src="img/flag-mx.png" alt="flag-mx" />
+                          México</span
+                        >
+                        <span>+52</span>
+                      </a>
+                    </li>
+                    <li class="border-bottom">
+                      <a
+                        class="dropdown-item d-flex justify-content-between"
+                        href="#">
+                        <span
+                          ><img src="img/flag-mx.png" alt="flag-mx" />
+                          México</span
+                        >
+                        <span>+52</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-7 col-md-9 pl-0">
+                <input
+                  id="phone-number"
+                  type="text"
+                  class="border border-2 rounded border-light-subtle p-1 pb-2 w-100 input-login"
+                  placeholder="Introduce el número" />
+              </div>
+            </div>
+
+            <span><small>PIN</small></span>
+            <div>
+              <input
+                type="password"
+                class="form-control input-login"
+                id="pin-login"
+                placeholder="••••"
+                maxlength="4" />
+              <p class="d-flex justify-content-end my-1">
+                <a href="#" class="fw-semibold">No recuerdo mi PIN</a>
+              </p>
+            </div>
+            <div class="w-100 my-3">
+              <div>
+                <button
+                  class="btn btn-primary w-100 fw-medium"
+                  id="btn-login"
+                  disabled>
+                  Ingresar
+                </button>
+              </div>
+            </div>
+
+            <div class="d-flex align-items-center my-2">
+              <span class="border border-light-subtle w-50 me-2"></span>
+              <span class="text-light"
+                ><i class="fa-regular fa-circle fa-2xs"></i
+              ></span>
+              <span class="border border-light-subtle w-50 mx-2 me-0"></span>
+            </div>
+            <div class="w-100 my-3">
+              <button
+                class="btn btn-outline-primary w-100 fw-medium my-2"
+                id="btn-register">
+                Registrarme
+              </button>
+              <button
+                class="btn btn-outline-primary w-100 fw-medium border-0 my-2">
+                Hacer Recarga
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Phone Number End -->
+
+        <!-- Code Confirm Start -->
+        <div class="col-md-6 my-3 d-none" id="code-confirm">
+          <a href="#" class="text-decoration-none">
+            <i class="fa-solid fa-angle-left"></i> Volver</a
+          >
+          <div class="alert alert-success d-none" id="alert-new-code">
+            <i class="fa fa-circle-check"></i> Nuevo código enviado.
+          </div>
+          <div class="alert alert-danger d-none">
+            <i class="fa-regular fa-circle-xmark"></i> El código no es correcto.
+            Solicita uno nuevo.
+          </div>
+          <div class="alert alert-danger d-none">
+            <i class="fa fa-circle-xmark text-danger"></i> El código no es
+            correcto. Solicita uno nuevo.
+          </div>
+          <div class="rounded shadow bg-white my-2 p-3">
+            <p><b>Introduce el código</b></p>
+            <p>
+              Introduce el código de 4 dígitos que hemos enviado a
+              <span id="codpais"></span> -XXX-XXX-<span
+                id="phone-number-last"></span
+              >.
+            </p>
+            <div class="d-flex justify-content-center">
+              <div class="p-1 mx-2">
+                <input
+                  type="text"
+                  maxlength="1"
+                  class="form-control px-3 code-input"
+                  style="width: 60px; height: 60px"
+                  placeholder="X" />
+              </div>
+              <div class="p-1 mx-2">
+                <input
+                  type="text"
+                  maxlength="1"
+                  class="form-control px-3 code-input"
+                  style="width: 60px; height: 60px"
+                  placeholder="X" />
+              </div>
+              <div class="p-1 mx-2">
+                <input
+                  type="text"
+                  maxlength="1"
+                  class="form-control px-3 code-input"
+                  style="width: 60px; height: 60px"
+                  placeholder="X" />
+              </div>
+              <div class="p-1 mx-2">
+                <input
+                  type="text"
+                  maxlength="1"
+                  class="form-control px-3 code-input"
+                  style="width: 60px; height: 60px"
+                  placeholder="X" />
+              </div>
+            </div>
+            <p class="text-center text-light-emphasis">
+              ¿No recibiste el código?
+            </p>
+            <p class="text-center">
+              <a
+                href="#"
+                class="text-decoration-none text-primary text-opacity-50"
+                id="link-new-code"
+                >Solicitar nuevo código <span id="counter"></span
+              ></a>
+            </p>
+            <button
+              class="btn btn-primary w-100"
+              id="btn-validate-code"
+              disabled>
+              Confirmar
+            </button>
+          </div>
+        </div>
+        <!-- Code Confirm End -->
+      </div>
+    </div>
+    <!-- Quick Presentation End -->
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+      integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"></script>
+    <script src="lib/bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="js/login.js"></script>
+  </body>
+</html>
