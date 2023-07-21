@@ -1,60 +1,72 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Click para mostrar tarjeta</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width , initial-scale=1.0" />
+    <title>Mitopup Login</title>
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="css/home.css" />
+    <!-- Bootstrap Personalizado -->
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css"
+      integrity="sha512-ZnR2wlLbSbr8/c9AgLg3jQPAattCUImNsae6NHYnS9KrIwRdcY9DxFotXhNAKIKbAXlRnujIqUWoXXwqyFOeIQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
     <style>
-      /* Estilo para la tarjeta */
-      .card {
-        position: absolute;
-        width: 200px;
-        height: 100px;
-        background-color: #f0f0f0;
-        border: 1px solid #ccc;
-        padding: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        display: none; /* Inicialmente oculto */
+      /* Animacion de los slides */
+      .carousel-item-c {
+        animation: all 1s ease-in-out;
       }
     </style>
   </head>
   <body>
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo laborum
-    amet veniam, ducimus modi porro inventore consequatur magni in nam? Velit
-    quaerat laborum numquam atque! Est quod voluptates cum asperiores. Lorem,
-    ipsum dolor sit amet consectetur adipisicing elit. Dolorum, atque? Porro
-    dignissimos reiciendis cum vel sint, voluptatem libero eveniet officia
-    quisquam consectetur ratione voluptas sunt ex velit dolore voluptate
-    eligendi.
-    <br />
-    <button class="btn">Boton 1</button>
-    <br />
-    <button class="btn" id="btn">Boton 2</button>
-    <div class="card" id="cardElement">
-      <!-- Contenido de la tarjeta -->
-      <h3>Información de la tarjeta</h3>
-      <p>Esta es la tarjeta que aparece en la posición del clic.</p>
+    <div class="carousel-container w-50 bg-light d-flex">
+      <div class="w-100 carousel-item-c"><h1>Item 1</h1></div>
+      <div class="w-100 d-none carousel-item-c"><h1>Item 2</h1></div>
+      <div class="w-100 d-none carousel-item-c"><h1>Item 3</h1></div>
     </div>
-
+    <div class="carousel-nav">
+      <span
+        ><i class="fa fa-circle carousel-link text-primary" data-carid="0"></i
+      ></span>
+      <span><i class="fa fa-circle carousel-link" data-carid="1"></i></span>
+      <span><i class="fa fa-circle carousel-link" data-carid="2"></i></span>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+      integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"></script>
+    <script src="lib/bootstrap/js/bootstrap.bundle.js"></script>
     <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        // Agregar el evento de clic al body del documento
-        document
-          .getElementById("btn")
-          .addEventListener("click", function (event) {
-            // Obtener la posición X e Y del clic
-            var x = event.clientX;
-            var y = event.clientY;
+      $(".carousel-link").click(function () {
+        let car_index = $(this).data("carid");
 
-            console.log(x);
-            // Obtener la referencia al elemento de la tarjeta
-            var cardElement = document.getElementById("cardElement");
+        $(".carousel-link").each(function (index, element) {
+          if (index == car_index) {
+            $(element).addClass("text-primary");
+          } else {
+            $(element).removeClass("text-primary");
+          }
+        });
 
-            // Establecer la posición de la tarjeta usando estilos en línea
-            cardElement.style.left = x + "px";
-            cardElement.style.top = y + "px";
-
-            // Mostrar la tarjeta
-            cardElement.style.display = "block";
-          });
+        $(".carousel-item-c").each(function (index, element) {
+          if (index == car_index) {
+            $(element).removeClass("d-none");
+          } else {
+            $(element).addClass("d-none");
+          }
+        });
       });
     </script>
   </body>
