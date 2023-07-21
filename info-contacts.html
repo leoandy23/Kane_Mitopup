@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width , initial-scale=1.0" />
+    <title>Mitopup Hacer Recarga</title>
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="css/info-contacts.css" />
+    <!-- Bootstrap Personalizado -->
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css"
+      integrity="sha512-ZnR2wlLbSbr8/c9AgLg3jQPAattCUImNsae6NHYnS9KrIwRdcY9DxFotXhNAKIKbAXlRnujIqUWoXXwqyFOeIQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <!-- Navbar Start -->
+
+    <nav class="navbar navbar-expand-lg border-bottom p-2">
+      <div class="container-fluid">
+        <div class="d-flex align-items-center">
+          <a class="navbar-brand" href="#">
+            <img src="img/Logo.png" alt="LogoMitopup" class="mx-5 img-fluid" />
+          </a>
+          <button
+            class="navbar-toggler border-0"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars text-primary"></i>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul
+            class="navbar-nav m-0 me-md-auto mb-2 mb-lg-0 w-100 justify-content-end px-md-5 align-items-md-center">
+            <li class="nav-item my-1 mx-1">
+              <a href="#" class="btn btn-primary shadow-custom"
+                >Hacer recarga</a
+              >
+            </li>
+            <li class="nav-item mx-1">
+              <a class="nav-link" href="#">
+                <i class="bi bi-bell fs-4"></i>
+              </a>
+            </li>
+            <li class="nav-item mx-1">
+              <a class="nav-link" href="#">
+                <i class="bi bi-question-circle fs-4"></i>
+              </a>
+            </li>
+            <li class="nav-item mx-1">
+              <a class="nav-link d-flex align-items-center" href="#">
+                <i class="bi bi-c-circle-fill fs-4 text-primary mx-1"></i>
+                <b>Cristina Rota</b>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+    <!-- Container Start -->
+    <div class="row w-100">
+      <!-- Sidebar Start -->
+      <div class="col-md-1 border-end">
+        <div class="d-flex flex-column" style="height: 65vh">
+          <div class="my-3">
+            <a
+              href="#"
+              class="nav-link text-decoration-none d-flex flex-column align-items-center text-primary"
+              ><i class="bi bi-house fs-4"></i> <span>Inicio</span></a
+            >
+          </div>
+          <div class="my-3">
+            <a
+              href="#"
+              class="nav-link text-decoration-none d-flex flex-column align-items-center"
+              ><i class="fa-solid fa-arrow-right-from-bracket fs-4"></i>
+              <span>Recargas</span></a
+            >
+          </div>
+          <div class="my-3">
+            <a
+              href="#"
+              class="nav-link text-decoration-none d-flex flex-column align-items-center"
+              ><i class="bi bi-gift fs-4"></i> <span>Promos</span></a
+            >
+          </div>
+          <div class="my-3">
+            <a
+              href="#"
+              class="nav-link text-decoration-none d-flex flex-column align-items-center"
+              ><i class="fa-regular fa-circle-user fs-4"></i>
+              <span>Perfil</span></a
+            >
+          </div>
+        </div>
+        <div class="my-2">
+          <a
+            href="#"
+            class="nav-link text-decoration-none d-flex flex-column align-items-center text-danger"
+            ><i class="bi bi-box-arrow-right fs-4"></i>
+            <span class="w-100 text-center">Cerrar Sesión</span></a
+          >
+        </div>
+      </div>
+      <!-- Sidebar End -->
+      <!-- Main Start -->
+      <div
+        class="col-md-11 overflow-y-scroll"
+        id="main-container"
+        style="height: 100vh">
+        <div class="container">
+          <!-- View 1 Start -->
+          <div class="row">
+            <div class="col-md-5 p-3">
+              <div class="container-fluid">
+                <a href="#" class="fw-bold text-decoration-none"
+                  ><i class="fa fa-angle-left me-3 mb-3"></i>Atrás</a
+                >
+                <div class="bg-white p-3 rounded">
+                  <p class="fw-bold">Mis contactos</p>
+
+                  <div class="shadow rounded p-3 my-3">
+                    <div class="d-flex align-items-center">
+                      <div>
+                        <span
+                          class="d-flex flex-column align-items-center justify-content-center icon-contact bg-success-subtle text-white">
+                          <span class="fs-2">L</span>
+                        </span>
+                      </div>
+
+                      <div class="flex-fill mx-3">
+                        <p class="m-0">Lucía Hija</p>
+                        <p class="m-0 text-light-emphasis">
+                          <small>+52 42764234329</small>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="shadow rounded p-3 my-3">
+                    <div class="d-flex align-items-center">
+                      <div>
+                        <span
+                          class="d-flex flex-column align-items-center justify-content-center icon-contact bg-danger-subtle text-white">
+                          <span class="fs-2">M</span>
+                        </span>
+                      </div>
+
+                      <div class="flex-fill mx-3">
+                        <p class="m-0">Mamá</p>
+                        <p class="m-0 text-light-emphasis">
+                          <small>+52 42764234329</small>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="shadow rounded p-3 my-3">
+                    <div class="d-flex align-items-center">
+                      <div>
+                        <span
+                          class="d-flex flex-column align-items-center justify-content-center icon-contact bg-primary-subtle text-white">
+                          <span class="fs-2">P</span>
+                        </span>
+                      </div>
+
+                      <div class="flex-fill mx-3">
+                        <p class="m-0">Papá</p>
+                        <p class="m-0 text-light-emphasis">
+                          <small>+52 42764234329</small>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="shadow rounded p-3 my-3">
+                    <div class="d-flex align-items-center">
+                      <div>
+                        <span
+                          class="d-flex flex-column align-items-center justify-content-center icon-contact bg-info-subtle text-white">
+                          <span class="fs-2">T</span>
+                        </span>
+                      </div>
+
+                      <div class="flex-fill mx-3">
+                        <p class="m-0">Tía Juana</p>
+                        <p class="m-0 text-light-emphasis">
+                          <small>+52 42764234329</small>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <button
+                    class="btn btn-primary w-100 shadow-custom"
+                    id="btn-add-contact">
+                    Agregar nuevo contacto
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- View contact Start -->
+            <div class="col-md-7 p-3 pt-5 mt-1" id="info-contacts">
+              <div class="container-fluid">
+                <a href="#" class="fw-bold text-decoration-none"></a>
+                <div class="bg-white rounded p-3">
+                  <div
+                    class="d-flex justify-content-between align-items-center">
+                    <span class="fw-bold">Contacto</span>
+                    <button class="btn btn-primary shadow-custom">
+                      Hacer recarga a este contacto
+                    </button>
+                  </div>
+                  <div class="my-4">
+                    <div class="btn-group bg-light p-2 w-100">
+                      <button
+                        id="btn-section1"
+                        class="btn bg-white text-dark rounded"
+                        onclick="showSection(1)">
+                        Información
+                      </button>
+                      <button
+                        id="btn-section2"
+                        class="btn bg-light rounded text-dark text-opacity-25"
+                        onclick="showSection(2)">
+                        Historial de recargas
+                      </button>
+                    </div>
+
+                    <div id="section1" class="mt-3">
+                      <div>
+                        <div class="mb-3">
+                          <label for="contact-name"
+                            ><small>Nombre:</small></label
+                          >
+                          <input
+                            type="text"
+                            id="contact-name"
+                            class="form-control"
+                            placeholder="Nombre del contacto" />
+                        </div>
+                        <div class="mb-3">
+                          <div class="row my-2">
+                            <label for="contact-number"
+                              ><small>Número de celular:</small></label
+                            >
+                            <div class="col-5 col-md-3 mx-0 pe-0">
+                              <div class="dropdown w-100 pe-2">
+                                <button
+                                  class="btn btn-outline-secondary py-1 border-light-subtle dropdown-toggle border w-100 text-black"
+                                  type="button"
+                                  data-bs-toggle="dropdown"
+                                  aria-expanded="false">
+                                  +52
+                                  <img src="img/flag-mx.png" alt="flag-mx" />
+                                </button>
+                                <ul class="dropdown-menu list-pais">
+                                  <div class="m-2">
+                                    <input
+                                      type="search"
+                                      name=""
+                                      id=""
+                                      placeholder="Buscar pais"
+                                      class="border-light-subtle rounded w-100 p-2" />
+                                  </div>
+                                  <li class="border-bottom">
+                                    <a
+                                      class="dropdown-item d-flex justify-content-between"
+                                      href="#">
+                                      <span
+                                        ><img
+                                          src="img/flag-mx.png"
+                                          alt="flag-mx" />
+                                        México</span
+                                      >
+                                      <span>+52</span>
+                                    </a>
+                                  </li>
+                                  <li class="border-bottom">
+                                    <a
+                                      class="dropdown-item d-flex justify-content-between"
+                                      href="#">
+                                      <span
+                                        ><img
+                                          src="img/flag-mx.png"
+                                          alt="flag-mx" />
+                                        México</span
+                                      >
+                                      <span>+52</span>
+                                    </a>
+                                  </li>
+                                  <li class="border-bottom">
+                                    <a
+                                      class="dropdown-item d-flex justify-content-between"
+                                      href="#">
+                                      <span
+                                        ><img
+                                          src="img/flag-mx.png"
+                                          alt="flag-mx" />
+                                        México</span
+                                      >
+                                      <span>+52</span>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="col-7 col-md-9 pl-0">
+                              <input
+                                id="contact-number"
+                                type="text"
+                                class="border rounded border-light-subtle p-1 pb-2 w-100"
+                                placeholder="Introduce el número" />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="mb-3">
+                          <button class="btn btn-outline-primary w-100 my-2">
+                            Editar información
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="section2" class="mt-3 d-none">
+                      <!-- Card 1 Start -->
+                      <div class="shadow rounded p-3 my-3">
+                        <div class="d-flex align-items-center">
+                          <div>
+                            <span
+                              class="d-flex flex-column align-items-center justify-content-center icon-contact bg-info-subtle text-white">
+                              <span class="fs-2">T</span>
+                            </span>
+                          </div>
+
+                          <div class="flex-fill mx-3">
+                            <p class="m-0 text-light-emphasis">
+                              <small>23/02/2023 14:05</small>
+                            </p>
+                            <p class="m-0">Tía Juana</p>
+                            <p class="m-0 text-light-emphasis">
+                              <small>400 MXN de crédito</small>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Card 1 End -->
+
+                      <!-- Card 2 Start -->
+                      <div class="shadow rounded p-3 my-3">
+                        <div class="my-2">
+                          <span class="bg-primary-subtle rounded-5 px-2 py-1"
+                            ><i class="fa-regular fa-calendar-days"></i> Recarga
+                            automática</span
+                          >
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <div>
+                            <span
+                              class="d-flex flex-column align-items-center justify-content-center icon-contact bg-primary-subtle text-white">
+                              <span class="fs-2">P</span>
+                            </span>
+                          </div>
+
+                          <div class="flex-fill mx-3">
+                            <p class="m-0 text-light-emphasis">
+                              <small>23/02/2023 14:05</small>
+                            </p>
+                            <p class="m-0">Papá</p>
+                            <p class="m-0 text-light-emphasis">
+                              <small>Plan Amigo 400 GB</small>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Card 2 End -->
+                      <!-- Card 3 Start -->
+                      <div class="shadow rounded p-3 my-3">
+                        <div class="d-flex align-items-center">
+                          <div>
+                            <span
+                              class="d-flex flex-column align-items-center justify-content-center icon-contact bg-danger-subtle text-white">
+                              <span class="fs-2">M</span>
+                            </span>
+                          </div>
+
+                          <div class="flex-fill mx-3">
+                            <p class="m-0 text-light-emphasis">
+                              <small>23/02/2023 14:05</small>
+                            </p>
+                            <p class="m-0">Mamá</p>
+                            <p class="m-0 text-light-emphasis">
+                              <small>Plan amigo 400 GB</small>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Card 3 End -->
+
+                      <!-- Card 4 Start -->
+                      <div class="shadow rounded p-3 my-3">
+                        <div class="my-2">
+                          <span class="bg-primary-subtle rounded-5 px-2 py-1"
+                            ><i class="fa-regular fa-calendar-days"></i> Recarga
+                            automática</span
+                          >
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <div>
+                            <span
+                              class="d-flex flex-column align-items-center justify-content-center icon-contact bg-primary-subtle text-white">
+                              <span class="fs-2">P</span>
+                            </span>
+                          </div>
+
+                          <div class="flex-fill mx-3">
+                            <p class="m-0 text-light-emphasis">
+                              <small>23/02/2023 14:05</small>
+                            </p>
+                            <p class="m-0">Papá</p>
+                            <p class="m-0 text-light-emphasis">
+                              <small>Plan amigo 400 GB</small>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Card 4 End -->
+                    </div>
+                    <div>
+                      <button
+                        type="button"
+                        class="btn btn-outline-danger w-100 my-2"
+                        data-bs-toggle="modal"
+                        data-bs-target="#modal-delete">
+                        Eliminar contacto
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- View contact End -->
+
+            <!-- Save contact Start -->
+            <div class="col-md-7 p-3 pt-5 mt-1 d-none" id="add-contact">
+              <div class="container-fluid">
+                <div class="bg-white rounded p-3">
+                  <span class="d-inline-block fw-bold mb-4"
+                    >Nuevo contacto</span
+                  >
+                  <p>Agrega tus contactos para recargar más rápido.</p>
+                  <div>
+                    <div class="mb-3">
+                      <label for="new-contact-name"
+                        ><small>Nombre:</small></label
+                      >
+                      <input
+                        type="text"
+                        id="new-contact-name"
+                        class="form-control"
+                        placeholder="Nombre del contacto" />
+                    </div>
+                    <div class="mb-3">
+                      <div class="row my-2">
+                        <label for="new-contact-number"
+                          ><small>Número de celular:</small></label
+                        >
+                        <div class="col-5 col-md-3 mx-0 pe-0">
+                          <div class="dropdown w-100 pe-2">
+                            <button
+                              class="btn btn-outline-secondary py-1 border-light-subtle dropdown-toggle border w-100 text-black"
+                              type="button"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false">
+                              +52
+                              <img src="img/flag-mx.png" alt="flag-mx" />
+                            </button>
+                            <ul class="dropdown-menu list-pais">
+                              <div class="m-2">
+                                <input
+                                  type="search"
+                                  name=""
+                                  id=""
+                                  placeholder="Buscar pais"
+                                  class="border-light-subtle rounded w-100 p-2" />
+                              </div>
+                              <li class="border-bottom">
+                                <a
+                                  class="dropdown-item d-flex justify-content-between"
+                                  href="#">
+                                  <span
+                                    ><img src="img/flag-mx.png" alt="flag-mx" />
+                                    México</span
+                                  >
+                                  <span>+52</span>
+                                </a>
+                              </li>
+                              <li class="border-bottom">
+                                <a
+                                  class="dropdown-item d-flex justify-content-between"
+                                  href="#">
+                                  <span
+                                    ><img src="img/flag-mx.png" alt="flag-mx" />
+                                    México</span
+                                  >
+                                  <span>+52</span>
+                                </a>
+                              </li>
+                              <li class="border-bottom">
+                                <a
+                                  class="dropdown-item d-flex justify-content-between"
+                                  href="#">
+                                  <span
+                                    ><img src="img/flag-mx.png" alt="flag-mx" />
+                                    México</span
+                                  >
+                                  <span>+52</span>
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="col-7 col-md-9 pl-0">
+                          <input
+                            id="new-contact-number"
+                            type="text"
+                            class="border rounded border-light-subtle p-1 pb-2 w-100"
+                            placeholder="Introduce el número" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mb-3">
+                      <button
+                        class="btn btn-primary w-100 my-2"
+                        id="btn-save-contact">
+                        Guardar Contacto
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Save contact End -->
+          </div>
+          <!-- View 1 End -->
+        </div>
+      </div>
+      <!-- Main End -->
+    </div>
+    <!-- Container End -->
+
+    <!-- Modal delete contact Start -->
+    <div
+      class="modal fade"
+      id="modal-delete"
+      tabindex="-1"
+      aria-labelledby="modal-deleteLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content text-center">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5 fw-bold w-100" id="modal-deleteLabel">
+              ¿Estás seguro?
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>Si eliminas este usuario, tendrás que volver a agregarlo.</p>
+            <button class="btn btn-outline-primary w-100">
+              Eliminar contacto
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal delete contact End -->
+
+    <!-- Modal save contact Start -->
+    <div
+      class="modal fade"
+      id="modal-save"
+      tabindex="-1"
+      aria-labelledby="modal-saveLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content text-center">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5 fw-bold w-100" id="modal-saveLabel">
+              Contacto guardado
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>¿Quieres hacer una recarga al celular de este contacto?</p>
+            <button class="btn btn-primary w-100">Comenzar recarga</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal save contact End -->
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+      integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"></script>
+    <script src="lib/bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="js/info-contacts.js"></script>
+  </body>
+</html>

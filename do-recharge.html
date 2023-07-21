@@ -1,0 +1,1019 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width , initial-scale=1.0" />
+    <title>Mitopup Hacer Recarga</title>
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="css/do-recharge.css" />
+    <!-- Bootstrap Personalizado -->
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css"
+      integrity="sha512-ZnR2wlLbSbr8/c9AgLg3jQPAattCUImNsae6NHYnS9KrIwRdcY9DxFotXhNAKIKbAXlRnujIqUWoXXwqyFOeIQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <!-- Navbar Start -->
+
+    <nav class="navbar navbar-expand-lg border-bottom p-3">
+      <div class="container-fluid">
+        <div class="d-flex align-items-center">
+          <a class="navbar-brand" href="#">
+            <img src="img/Logo.png" alt="LogoMitopup" class="mx-5 img-fluid" />
+          </a>
+          <button
+            class="navbar-toggler border-0"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars text-primary"></i>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul
+            class="navbar-nav m-0 me-md-auto mb-2 mb-lg-0 w-100 justify-content-end px-md-5 align-items-md-center">
+            <li class="nav-item my-1 mx-1">
+              <a href="#" class="btn btn-primary shadow-custom"
+                >Hacer recarga</a
+              >
+            </li>
+            <li class="nav-item mx-1">
+              <a class="nav-link" href="#">
+                <i class="bi bi-bell fs-4"></i>
+              </a>
+            </li>
+            <li class="nav-item mx-1">
+              <a class="nav-link" href="#">
+                <i class="bi bi-question-circle fs-4"></i>
+              </a>
+            </li>
+            <li class="nav-item mx-1">
+              <a class="nav-link d-flex align-items-center" href="#">
+                <i class="bi bi-c-circle-fill fs-4 text-primary mx-1"></i>
+                <b>Cristina Rota</b>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+    <!-- Main Start-->
+
+    <div class="w-100 py-5">
+      <div class="container">
+        <div class="row px-3">
+          <div class="col-12 col-md-4">
+            <a href="#" class="text-primary text-decoration-none">
+              <i class="fa-solid fa-angle-left"></i> Volver a inicio</a
+            >
+            <div class="m-0 my-3 p-3 rounded bg-white">
+              <p class="fs-6 fw-bolder">Resumen</p>
+              <div class="d-flex justify-content-between my-1">
+                <small class="text-light-emphasis">País de la recarga</small>
+                <small>México (+52)</small>
+              </div>
+
+              <div class="d-flex justify-content-between my-1">
+                <small class="text-light-emphasis">Número de celular</small>
+                <small>654783538</small>
+              </div>
+
+              <div class="d-flex justify-content-between my-1">
+                <small class="text-light-emphasis">Operadora</small>
+                <small>Telcel</small>
+              </div>
+
+              <div class="border-top d-none" id="recharge-details">
+                <p class="py-1 my-0"><small>Recarga móvil</small></p>
+                <div class="d-flex justify-content-between my-1">
+                  <small class="text-light-emphasis" id="recharge-type"
+                    >Recarga</small
+                  >
+                  <small id="recharge-cost">$10</small>
+                </div>
+                <div class="d-flex justify-content-between my-1">
+                  <small class="text-light-emphasis">Comisión</small>
+                  <small>$5,00</small>
+                </div>
+
+                <div class="d-flex justify-content-between my-1">
+                  <small><b>Total</b></small>
+                  <small><b id="recharge-total-cost">$5,00</b></small>
+                </div>
+              </div>
+
+              <div class="border-top d-none" id="info-user">
+                <p class="py-1 my-0"><small>Envío de comprobante</small></p>
+                <div class="d-flex justify-content-between my-1">
+                  <small class="text-light-emphasis" id="recharge-type"
+                    >Email</small
+                  >
+                  <small id="email-user"></small>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="m-0 my-3 p-3 rounded bg-green-light d-flex flex-column align-items-center">
+              <p class="fs-6 fw-bolder">Descargate la app</p>
+              <p>
+                <small
+                  >Obtén <b>5.00$ de descuento</b> en tu primera recarga.</small
+                >
+              </p>
+              <div
+                class="d-flex flex-column flex-md-row justify-content-between">
+                <a href="#" class="btn btn-light m-1">
+                  <p
+                    class="d-flex p-0 m-0 align-items-center justify-content-between">
+                    <i class="fab fa-google-play me-2"></i>
+                    <span class="fs-6">
+                      <small class="d-block">GET IT ON</small>
+                      <small class="d-block"><b>Google Play</b></small>
+                    </span>
+                  </p>
+                </a>
+                <a href="#" class="btn btn-light m-1">
+                  <p class="d-flex p-0 m-0 align-items-center">
+                    <i class="fab fa-apple me-2"></i>
+                    <span class="fs-6">
+                      <small class="d-block">Download on the</small>
+                      <small class="d-block"><b>App Store</b></small>
+                    </span>
+                  </p>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-8">
+            <div class="d-flex justify-content-between align-items-center my-2">
+              <p
+                class="d-flex align-items-center p-0 m-0 text-primary fw-bolder link-section-recharge"
+                data-section="0">
+                <i class="bi bi-1-circle-fill fs-4 me-2"></i>Selecciona contacto
+              </p>
+              <span><i class="fa-solid fa-angle-right"></i></span>
+              <p
+                class="d-flex align-items-center p-0 m-0 text-light-emphasis fw-bolder link-section-recharge"
+                data-section="1">
+                <i class="bi bi-2-circle-fill fs-4 me-2"></i>Tipo de recarga
+              </p>
+              <span><i class="fa-solid fa-angle-right"></i></span>
+              <p
+                class="d-flex align-items-center p-0 m-0 text-light-emphasis fw-bolder link-section-recharge"
+                data-section="2">
+                <i class="bi bi-3-circle-fill fs-4 me-2"></i>Programa tu recarga
+              </p>
+              <span><i class="fa-solid fa-angle-right"></i></span>
+              <p
+                class="d-flex align-items-center p-0 m-0 text-light-emphasis fw-bolder link-section-recharge"
+                data-section="3">
+                <i class="bi bi-4-circle-fill fs-4 me-2"></i>Método de pago
+              </p>
+            </div>
+
+            <!-- Section 0 Recharge Start -->
+            <div
+              class="section-recharge rounded bg-white p-3"
+              id="section-recharge-0">
+              <div class="btn-group bg-light p-2 w-100">
+                <button
+                  id="btn-section-contact-1"
+                  class="btn bg-white text-dark rounded"
+                  onclick="showSectionContact(1)">
+                  Nuevo contacto
+                </button>
+                <button
+                  id="btn-section-contact-2"
+                  class="btn bg-light rounded text-dark text-opacity-25"
+                  onclick="showSectionContact(2)">
+                  Mis contactos
+                </button>
+              </div>
+              <div id="section-contact-1" class="mt-5">
+                <p>Introduce el número del destinatario de la recarga.</p>
+                <div class="row my-2">
+                  <span><small>Número del destinatario:</small></span>
+                  <div class="col-5 col-md-3 mx-0 pe-0">
+                    <div class="dropdown w-100 pe-2">
+                      <button
+                        class="btn btn-outline-secondary py-1 border-light-subtle dropdown-toggle border-2 w-100 text-black"
+                        type="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        +52 <img src="img/flag-mx.png" alt="flag-mx" />
+                      </button>
+                      <ul class="dropdown-menu list-pais">
+                        <div class="m-2">
+                          <input
+                            type="search"
+                            name=""
+                            id=""
+                            placeholder="Buscar pais"
+                            class="border-light-subtle rounded w-100 p-2" />
+                        </div>
+                        <li class="border-bottom">
+                          <a
+                            class="dropdown-item d-flex justify-content-between"
+                            href="#">
+                            <span
+                              ><img src="img/flag-mx.png" alt="flag-mx" />
+                              México</span
+                            >
+                            <span>+52</span>
+                          </a>
+                        </li>
+                        <li class="border-bottom">
+                          <a
+                            class="dropdown-item d-flex justify-content-between"
+                            href="#">
+                            <span
+                              ><img src="img/flag-mx.png" alt="flag-mx" />
+                              México</span
+                            >
+                            <span>+52</span>
+                          </a>
+                        </li>
+                        <li class="border-bottom">
+                          <a
+                            class="dropdown-item d-flex justify-content-between"
+                            href="#">
+                            <span
+                              ><img src="img/flag-mx.png" alt="flag-mx" />
+                              México</span
+                            >
+                            <span>+52</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-7 col-md-9 pl-0">
+                    <input
+                      id="contact-number"
+                      type="text"
+                      class="border border-2 rounded border-light-subtle p-1 pb-2 w-100 contact-input"
+                      placeholder="Introduce el número" />
+                  </div>
+                </div>
+
+                <div class="my-3">
+                  <span><small>Nombre:</small></span>
+                  <input
+                    type="text"
+                    id="contact-name"
+                    placeholder="Introduce el nombre"
+                    class="form-control contact-input" />
+                </div>
+                <div class="d-flex justify-content-end my-3">
+                  <label for="check-save-contact" class="me-2"
+                    >Guardar este contacto</label
+                  >
+                  <input
+                    type="checkbox"
+                    id="check-save-contact"
+                    class="form-check-input" />
+                </div>
+              </div>
+              <div id="section-contact-2" class="mt-5 d-none">
+                <h4>Contactos guardados</h4>
+                <div class="container">
+                  <div class="shadow rounded p-3 my-3">
+                    <div class="d-flex align-items-center">
+                      <div>
+                        <span
+                          class="d-flex flex-column align-items-center justify-content-center icon-contact bg-success-subtle text-white">
+                          <span class="fs-2">L</span>
+                        </span>
+                      </div>
+
+                      <div class="flex-fill mx-3">
+                        <p class="m-0">Lucía Hija</p>
+                        <p class="m-0 text-light-emphasis">
+                          <small>+52 42764234329</small>
+                        </p>
+                      </div>
+                      <div class="flex-fill text-end p-3">
+                        <input
+                          class="check-rounded"
+                          type="radio"
+                          name="contact-check" />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="shadow rounded p-3 my-3">
+                    <div class="d-flex align-items-center">
+                      <div>
+                        <span
+                          class="d-flex flex-column align-items-center justify-content-center icon-contact bg-danger-subtle text-white">
+                          <span class="fs-2">M</span>
+                        </span>
+                      </div>
+
+                      <div class="flex-fill mx-3">
+                        <p class="m-0">Mamá</p>
+                        <p class="m-0 text-light-emphasis">
+                          <small>+52 42764234329</small>
+                        </p>
+                      </div>
+                      <div class="flex-fill text-end p-3">
+                        <input
+                          class="check-rounded"
+                          type="radio"
+                          name="contact-check" />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="shadow rounded p-3 my-3">
+                    <div class="d-flex align-items-center">
+                      <div>
+                        <span
+                          class="d-flex flex-column align-items-center justify-content-center icon-contact bg-primary-subtle text-white">
+                          <span class="fs-2">P</span>
+                        </span>
+                      </div>
+
+                      <div class="flex-fill mx-3">
+                        <p class="m-0">Papá</p>
+                        <p class="m-0 text-light-emphasis">
+                          <small>+52 42764234329</small>
+                        </p>
+                      </div>
+                      <div class="flex-fill text-end p-3">
+                        <input
+                          class="check-rounded"
+                          type="radio"
+                          name="contact-check" />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="shadow rounded p-3 my-3">
+                    <div class="d-flex align-items-center">
+                      <div>
+                        <span
+                          class="d-flex flex-column align-items-center justify-content-center icon-contact bg-info-subtle text-white">
+                          <span class="fs-2">T</span>
+                        </span>
+                      </div>
+
+                      <div class="flex-fill mx-3">
+                        <p class="m-0">Tía Juana</p>
+                        <p class="m-0 text-light-emphasis">
+                          <small>+52 42764234329</small>
+                        </p>
+                      </div>
+                      <div class="flex-fill text-end p-3">
+                        <input
+                          class="check-rounded"
+                          type="radio"
+                          name="contact-check" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <button
+                  class="btn btn-primary form-control btn-section-recharge"
+                  id="btn-section-recharge-0"
+                  data-section="0"
+                  disabled>
+                  Siguiente
+                </button>
+              </div>
+            </div>
+            <!-- Section 0 Recharge End -->
+            <!-- Section 1 Recharge Start -->
+            <div
+              class="section-recharge rounded bg-white p-3 d-none"
+              id="section-recharge-1">
+              <div class="btn-group bg-light p-2 w-100">
+                <button
+                  id="btn-section1"
+                  class="btn bg-white text-dark rounded"
+                  onclick="showSection(1)">
+                  Enviar saldo
+                </button>
+                <button
+                  id="btn-section2"
+                  class="btn bg-light rounded text-dark text-opacity-25"
+                  onclick="showSection(2)">
+                  Planes
+                </button>
+              </div>
+              <div
+                class="d-flex justify-content-between align-items-center my-2">
+                <span class="text-light-emphasis">Operadora</span>
+                <div>
+                  <img
+                    src="img/LogoTelcel.png"
+                    alt="LogoTelcel"
+                    class="img-fluid" />
+                </div>
+              </div>
+              <div id="section1" class="mt-3">
+                <div
+                  class="d-flex justify-content-between align-items-center bg-white rounded p-3 my-3 shadow-sm m-0">
+                  <div class="d-flex flex-column">
+                    <span>400MXN</span>
+                    <span class="text-light-emphasis"
+                      >Recibe 400 MXN de saldo</span
+                    >
+                  </div>
+                  <div class="d-flex">
+                    <span class="mx-3"><b>$5,00</b></span>
+                    <span>
+                      <input
+                        type="radio"
+                        name="recharge-value"
+                        class="check-rounded"
+                        data-value="5"
+                        data-type="Recarga"
+                    /></span>
+                  </div>
+                </div>
+                <div
+                  class="d-flex justify-content-between align-items-center bg-white rounded p-3 my-3 shadow-sm m-0">
+                  <div class="d-flex flex-column">
+                    <span>400MXN</span>
+                    <span class="text-light-emphasis"
+                      >Recibe 400 MXN de saldo</span
+                    >
+                  </div>
+                  <div class="d-flex">
+                    <span class="mx-3"><b>$5,00</b></span>
+                    <span>
+                      <input
+                        type="radio"
+                        name="recharge-value"
+                        class="check-rounded"
+                        data-value="5"
+                        data-type="Recarga"
+                    /></span>
+                  </div>
+                </div>
+                <div
+                  class="d-flex justify-content-between align-items-center bg-white rounded p-3 my-3 shadow-sm m-0">
+                  <div class="d-flex flex-column">
+                    <span>400MXN</span>
+                    <span class="text-light-emphasis"
+                      >Recibe 400 MXN de saldo</span
+                    >
+                  </div>
+                  <div class="d-flex">
+                    <span class="mx-3"><b>$5,00</b></span>
+                    <span>
+                      <input
+                        type="radio"
+                        name="recharge-value"
+                        class="check-rounded"
+                        data-value="5"
+                        data-type="Recarga"
+                    /></span>
+                  </div>
+                </div>
+
+                <div class="bg-white rounded p-3 my-3 shadow-sm m-0">
+                  <div
+                    class="d-flex justify-content-between align-items-center border-bottom py-3">
+                    <div class="d-flex flex-column">
+                      <span>Indicar otra cantidad</span>
+                    </div>
+                    <div class="d-flex">
+                      <a
+                        href="#"
+                        data-bs-toggle="modal"
+                        data-bs-target="#modal-other-quantity"
+                        ><i class="fa fa-pen"></i
+                      ></a>
+                    </div>
+                  </div>
+                  <div
+                    class="d-flex justify-content-between align-items-center py-2 d-none"
+                    id="other-quantity-container">
+                    <div class="d-flex flex-column">
+                      <span>400MXN</span>
+                      <span class="text-light-emphasis"
+                        >Recibe 400 MXN de saldo</span
+                      >
+                    </div>
+                    <div class="d-flex">
+                      <span class="mx-3"
+                        ><b id="other-quantity-value">$10,00</b></span
+                      >
+                      <span>
+                        <input
+                          id="other-quantity-check"
+                          type="radio"
+                          name="recharge-value"
+                          class="check-rounded"
+                          data-value="10"
+                          data-type="Recarga"
+                      /></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="section2" class="mt-3 d-none">
+                <div
+                  class="d-flex justify-content-between align-items-center bg-white rounded p-3 my-3 shadow-sm m-0">
+                  <div class="d-flex flex-column">
+                    <span>Plan Amigo</span>
+                    <span class="text-light-emphasis"
+                      >Llamadas ilimitadas. 14 GB. Plan válido para 1 mes.
+                      Efectivo a partir de hoy.</span
+                    >
+                  </div>
+                  <div class="d-flex">
+                    <span class="mx-3"><b>$10,00</b></span>
+                    <span>
+                      <input
+                        type="radio"
+                        name="recharge-value"
+                        class="check-rounded"
+                        data-value="10"
+                        data-type="Plan amigo 40 GB"
+                    /></span>
+                  </div>
+                </div>
+
+                <div
+                  class="d-flex justify-content-between align-items-center bg-white rounded p-3 my-3 shadow-sm m-0">
+                  <div class="d-flex flex-column">
+                    <span>Plan Amigo</span>
+                    <span class="text-light-emphasis"
+                      >Llamadas ilimitadas. 14 GB. Plan válido para 1 mes.
+                      Efectivo a partir de hoy.</span
+                    >
+                  </div>
+                  <div class="d-flex">
+                    <span class="mx-3"><b>$10,00</b></span>
+                    <span>
+                      <input
+                        type="radio"
+                        name="recharge-value"
+                        class="check-rounded"
+                        data-value="10"
+                        data-type="Plan amigo 40 GB"
+                    /></span>
+                  </div>
+                </div>
+
+                <div
+                  class="d-flex justify-content-between align-items-center bg-white rounded p-3 my-3 shadow-sm m-0">
+                  <div class="d-flex flex-column">
+                    <span>Plan Amigo</span>
+                    <span class="text-light-emphasis"
+                      >Llamadas ilimitadas. 14 GB. Plan válido para 1 mes.
+                      Efectivo a partir de hoy.</span
+                    >
+                  </div>
+                  <div class="d-flex">
+                    <span class="mx-3"><b>$10,00</b></span>
+                    <span>
+                      <input
+                        type="radio"
+                        name="recharge-value"
+                        class="check-rounded"
+                        data-value="10"
+                        data-type="Plan amigo 40 GB"
+                    /></span>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <button
+                  class="btn btn-primary form-control btn-section-recharge"
+                  id="btn-section-recharge-1"
+                  data-section="1"
+                  disabled>
+                  Siguiente
+                </button>
+              </div>
+            </div>
+            <!-- Section 1 Recharge End -->
+            <!-- Section 2 Recharge Start -->
+            <div
+              class="d-none rounded bg-white p-3 section-recharge"
+              id="section-recharge-2">
+              <p class="my-2">
+                Indica si deseas recargar automáticamente este celular cada
+                semana, quincena o mes.
+              </p>
+              <hr />
+
+              <div
+                class="p-0 form-check form-switch d-flex justify-content-between">
+                <label class="form-check-label m-0" for="check-program-recharge"
+                  >Programar recargas automáticas para este contacto.</label
+                >
+                <input
+                  class="form-check-input fs-4 shadow"
+                  type="checkbox"
+                  role="switch"
+                  id="check-program-recharge" />
+              </div>
+
+              <!-- Select Custom Start -->
+              <div id="select-frecuency" class="d-none my-2">
+                <small>Frecuencia de recarga</small>
+                <div class="custom-select w-100">
+                  <div class="select-header rounded-3 border">
+                    <span class="selected-option">Seleccionar una opción</span>
+                    <i class="arrow-icon">&#9660;</i>
+                  </div>
+                  <ul class="options-list rounded list-unstyled my-1">
+                    <li data-value="opcion1">
+                      <label
+                        for="r-semanal"
+                        class="d-flex justify-content-between align-items-center">
+                        <p class="d-flex flex-column m-0">
+                          <span class="option-text">Semanal</span
+                          ><small class="text-light-emphasis option-info"
+                            >Se realizará cada martes</small
+                          >
+                        </p>
+                        <p class="m-0">
+                          <input
+                            id="r-semanal"
+                            type="radio"
+                            name="frecuency"
+                            class="check-rounded"
+                            value="semanal" />
+                        </p>
+                      </label>
+                    </li>
+                    <li data-value="opcion2">
+                      <label
+                        for="r-quincenal"
+                        class="d-flex justify-content-between align-items-center">
+                        <p class="d-flex flex-column m-0">
+                          <span class="option-text">Quincenal</span
+                          ><small class="text-light-emphasis option-info"
+                            >Se realizará cada 15 días</small
+                          >
+                        </p>
+                        <p class="m-0">
+                          <input
+                            id="r-quincenal"
+                            type="radio"
+                            name="frecuency"
+                            class="check-rounded"
+                            value="quincenal" />
+                        </p>
+                      </label>
+                    </li>
+                    <li data-value="opcion3">
+                      <label
+                        for="r-mensual"
+                        class="d-flex justify-content-between align-items-center">
+                        <p class="d-flex flex-column m-0">
+                          <span class="option-text">Mensual</span
+                          ><small class="text-light-emphasis option-info"
+                            >Se realizará cada 30 días</small
+                          >
+                        </p>
+                        <p class="m-0">
+                          <input
+                            id="r-mensual"
+                            type="radio"
+                            name="frecuency"
+                            class="check-rounded"
+                            value="mensual" />
+                        </p>
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+                <p id="info-select" class="text-light-emphasis"></p>
+              </div>
+              <!-- Select Custom End -->
+              <button
+                class="btn btn-primary form-control btn-section-recharge my-3"
+                data-section="2"
+                id="btn-section-recharge-2">
+                Siguiente
+              </button>
+            </div>
+            <!-- Section 2 Recharge End -->
+
+            <!-- Section 3 Recharge Start -->
+            <div
+              class="section-recharge rounded bg-white p-3 d-none"
+              id="section-recharge-3">
+              <!-- Metodos Guadados Start -->
+              <div class="my-2">
+                <p class="fw-bold">Metodos guardados</p>
+
+                <div class="rounded shadow p-3 my-3">
+                  <span
+                    class="d-inline-block rounded-5 bg-primary-subtle px-3 py-1 mt-2"
+                    ><i class="fa fa-check"></i> Predeterminada</span
+                  >
+                  <div class="d-flex my-2 align-items-center">
+                    <span>
+                      <img src="img/IconMastercard.png" alt="" />
+                    </span>
+                    <label
+                      for="card-pay-1"
+                      class="px-3 flex-fill d-flex flex-column">
+                      <span>Mastercard acabada en 5357</span>
+                      <span class="text-light-emphasis"
+                        ><small>Caduca 08/26</small></span
+                      >
+                    </label>
+                    <input
+                      type="radio"
+                      id="card-pay-1"
+                      class="check-rounded"
+                      name="card-pay" />
+                  </div>
+                </div>
+
+                <div class="rounded shadow p-3 my-3">
+                  <div class="d-flex my-4 align-items-center">
+                    <span>
+                      <img src="img/IconVisa.png" alt="" />
+                    </span>
+                    <label
+                      for="card-pay-2"
+                      class="px-3 flex-fill d-flex flex-column">
+                      <span>Visa acabada en 5357</span>
+                      <span class="text-light-emphasis"
+                        ><small>Caduca 08/26</small></span
+                      >
+                    </label>
+                    <input
+                      type="radio"
+                      id="card-pay-2"
+                      class="check-rounded"
+                      name="card-pay" />
+                  </div>
+                </div>
+              </div>
+              <!-- Metodos Guadados End -->
+              <hr />
+              <!-- Nuevo metodo Start -->
+              <div class="my-2">
+                <p class="fw-bold">Nuevo método de pago</p>
+                <div class="row">
+                  <div class="col-12">
+                    <label for="card-number"
+                      ><small>Número de tarjeta</small></label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Introduce número de tarjeta"
+                      id="card-number" />
+                  </div>
+
+                  <div class="col-6">
+                    <label for="date-ven">Fecha de vencimiento</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="MM/AA"
+                      id="date-ven" />
+                  </div>
+
+                  <div class="col-6">
+                    <label for="security-code">Código de seguridad</label>
+                    <input
+                      type="password"
+                      class="form-control"
+                      placeholder="•••"
+                      id="security-code" />
+                  </div>
+                  <div class="d-flex justify-content-end my-2">
+                    <label for="save-card-info" class="me-2"
+                      >Guardar datos de esta tarjeta</label
+                    >
+                    <input
+                      type="checkbox"
+                      class="form-check-input"
+                      id="save-card-info" />
+                  </div>
+                </div>
+              </div>
+              <!-- Nuevo metodo End -->
+              <hr />
+              <!-- Promos y descuentos Start -->
+              <div>
+                <p class="fw-bold mb-2">Promociones y descuentos</p>
+                <button
+                  type="button"
+                  class="btn btn-outline-primary w-100 text-start my-3"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal-promo">
+                  <img src="svg/promo.svg" alt="" /> Añadir descuento
+                </button>
+              </div>
+              <!-- Promos y descuentos End -->
+              <button
+                class="btn btn-primary form-control mt-4"
+                data-bs-toggle="modal"
+                data-bs-target="#modal-pay">
+                Pagar
+              </button>
+            </div>
+            <!-- Section 3 Recharge End -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main End-->
+    <!-- Modal Other Quantity Start -->
+    <div
+      class="modal fade"
+      id="modal-other-quantity"
+      tabindex="-1"
+      aria-labelledby="modal-other-quantityLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="modal-other-quantityLabel">
+              Introduce cantidad
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>Indica la cantidad de la recarga a continuación:</p>
+            <form action="">
+              <input
+                id="txt-other-quantity"
+                type="text"
+                class="form-control my-2"
+                placeholder="$0,00" />
+              <button
+                type="button"
+                class="btn btn-primary form-control"
+                id="btn-other-quantity"
+                disabled>
+                Confirmar
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Other Quantity End -->
+
+    <!-- Modal Promo Start -->
+    <div
+      class="modal fade"
+      id="modal-promo"
+      tabindex="-1"
+      aria-labelledby="modal-promoLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <p class="modal-title fs-5 fw-bold" id="modal-promoLabel">
+              Añadir descuento
+            </p>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="my-3">
+              <p class="fw-bold">Códigos promocionales</p>
+              <label for="promo-code"><small>Código promocional</small></label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Introduce el código promocional" />
+            </div>
+            <hr />
+            <div class="my-3">
+              <p class="fw-bold">Cupones</p>
+
+              <div
+                class="my-3 container p-2 shadow rounded d-flex justify-content-between align-items-center">
+                <label for="check-cupon-1" class="d-flex flex-column">
+                  <span>Cupón descuento de $5.00 con tu primera recarga</span>
+                  <span class="text-success">Ahorra $5.00</span>
+                </label>
+                <input
+                  type="radio"
+                  id="check-cupon-1"
+                  name="check-cupon"
+                  class="check-rounded" />
+              </div>
+              <div
+                class="my-3container p-2 shadow rounded d-flex justify-content-between align-items-center">
+                <label for="check-cupon-2" class="d-flex flex-column">
+                  <span>Cupón descuento de $10.00</span>
+                  <span class="text-success">Ahorra $5.00</span>
+                </label>
+                <input
+                  type="radio"
+                  id="check-cupon-2"
+                  name="check-cupon"
+                  class="check-rounded" />
+              </div>
+            </div>
+
+            <div>
+              <p class="text-center text-light-emphasis">
+                <small
+                  ><i class="fa fa-info-circle"></i> Los descuentos no son
+                  acumulables.</small
+                >
+              </p>
+              <button type="button" class="btn btn-primary w-100">
+                Aplicar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Promo End -->
+
+    <!-- Modal Pay Start -->
+    <div
+      class="modal fade"
+      id="modal-pay"
+      tabindex="-1"
+      aria-labelledby="modal-payLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <p class="modal-title fs-5 fw-bold" id="modal-payLabel">
+              Recarga realizada
+            </p>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="text-center text-primary my-3">
+              <i class="fa fa-check-circle fa-5x"></i>
+            </div>
+            <div class="text-center my-2">
+              Se ha realizado una recarga de 400 MXN al número de celular +52
+              655212841.
+            </div>
+            <div class="form-floating">
+              <input
+                type="text"
+                class="form-control"
+                id="floatingInputValue"
+                value="Aud4532HSs" />
+              <label for="floatingInputValue">ID de la recarga</label>
+            </div>
+            <div class="my-3">
+              <button class="my-2 w-100 btn btn-primary">
+                Hacer otra recarga
+              </button>
+              <button class="my-2 w-100 btn btn-outline-primary border-0">
+                Ver resumen
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Pay End -->
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+      integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"></script>
+    <script src="lib/bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="js/do-recharge.js"></script>
+  </body>
+</html>
