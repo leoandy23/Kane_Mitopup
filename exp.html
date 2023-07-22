@@ -1,70 +1,142 @@
-<!-- Panel right start -->
-<div class="col-md-7 p-3">
-  <div class="container-fluid rounded bg-white p-5">
-    <p class="fw-bold">Resumen de la recarga</p>
-    <div class="my-3">
-      <span class="fw-bold">Destinatario</span>
-      <div class="my-3">
-        <p class="m-0 my-1 d-flex justify-content-between align-items-center">
-          <span class="text-light-emphasis">País de la recarga</span>
-          <span>México(+52)</span>
-        </p>
-        <p class="m-0 my-1 d-flex justify-content-between align-items-center">
-          <span class="text-light-emphasis">Número de celular</span>
-          <span>654783538</span>
-        </p>
-        <p class="m-0 my-1 d-flex justify-content-between align-items-center">
-          <span class="text-light-emphasis">Operadora</span>
-          <span>Telcel</span>
-        </p>
-      </div>
-    </div>
-    <hr />
-    <div class="my-3">
-      <span class="fw-bold">Detalles de la recarga</span>
-      <div class="my-3">
-        <p class="m-0 my-1 d-flex justify-content-between align-items-center">
-          <span class="text-light-emphasis">ID de la recarga</span>
-          <span>YFG76AS8F37</span>
-        </p>
-        <p class="m-0 my-1 d-flex justify-content-between align-items-center">
-          <span class="text-light-emphasis">Fecha</span>
-          <span>09/23/2023</span>
-        </p>
-        <p class="m-0 my-1 d-flex justify-content-between align-items-center">
-          <span class="text-light-emphasis">Hora</span>
-          <span>16:00:23</span>
-        </p>
-        <p class="m-0 my-1 d-flex justify-content-between align-items-center">
-          <span class="text-light-emphasis">Tipo de producto</span>
-          <span>Plan amigo 40GB</span>
-        </p>
-      </div>
-    </div>
-    <hr />
-    <div class="my-3">
-      <span class="fw-bold">Detalles de la transacción</span>
-      <div class="my-3">
-        <p class="m-0 my-1 d-flex justify-content-between align-items-center">
-          <span class="text-light-emphasis">Precio del producto</span>
-          <span>$10.00</span>
-        </p>
-        <p class="m-0 my-1 d-flex justify-content-between align-items-center">
-          <span class="text-light-emphasis">Comisión de servicio</span>
-          <span>$5.00</span>
-        </p>
-        <p class="m-0 my-1 d-flex justify-content-between align-items-center">
-          <span class="text-light-emphasis">Total pagado</span>
-          <span>$15.00</span>
-        </p>
-        <p class="m-0 my-1 d-flex justify-content-between align-items-center">
-          <span class="text-light-emphasis">Método de pago</span>
-          <span>Visa acabada en 5345</span>
-        </p>
-      </div>
+<script>
+  //Configuracion de select personalizado
+  $(".select-header").on("click", function () {
+    $(this).closest(".custom-select").toggleClass("open");
+  });
 
-      <button class="btn btn-primary w-100 shadow-custom">Enviar recibo</button>
+  $(".options-list li").on("click", function () {
+    const value = $(this).data("value");
+    const selectedText = $(this).find(".option-text").text(),
+      optionInfoText = $(this).find(".option-info").text();
+
+    $("#info-select").text(optionInfoText);
+    $(this)
+      .closest(".custom-select")
+      .find(".selected-option")
+      .text(selectedText);
+    $(this).closest(".custom-select").removeClass("open");
+  });
+</script>
+
+<style>
+  /* Estilos para select personalizado */
+  .custom-select {
+    position: relative;
+    width: 200px; /* Ajusta el ancho según tus necesidades */
+    /* border: thin solid  #DBDBDB; */
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .select-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+    background-color: #f9f9f9;
+  }
+
+  .arrow-icon {
+    margin-left: 8px;
+  }
+
+  .options-list {
+    display: none;
+    position: absolute;
+    width: 100%;
+    max-height: auto; /* Ajusta la altura máxima según tus necesidades */
+    /* overflow-y: auto; */
+    border: thin solid #dbdbdb;
+    background-color: #fff;
+    z-index: 1;
+  }
+
+  .options-list li {
+    padding: 8px;
+    border-bottom: 1px solid #dbdbdb;
+  }
+
+  .options-list li:last-child {
+    border-bottom: none;
+  }
+
+  /* Mostrar la lista de opciones al hacer clic en el encabezado */
+  .custom-select.open .options-list {
+    display: block;
+  }
+</style>
+
+<!-- Select Custom Start -->
+<div class="my-2">
+  <small>Frecuencia de recarga</small>
+  <div class="custom-select w-100">
+    <div class="select-header rounded-3 border">
+      <span class="selected-option">Seleccionar una opción</span>
+      <i class="arrow-icon">&#9660;</i>
     </div>
+    <ul class="options-list rounded list-unstyled my-1">
+      <li data-value="opcion1">
+        <label
+          for="r-semanal"
+          class="d-flex justify-content-between align-items-center">
+          <p class="d-flex flex-column m-0">
+            <span class="option-text">Semanal</span
+            ><small class="text-light-emphasis option-info"
+              >Se realizará cada martes</small
+            >
+          </p>
+          <p class="m-0">
+            <input
+              id="r-semanal"
+              type="radio"
+              name="frecuency"
+              class="check-rounded"
+              value="semanal" />
+          </p>
+        </label>
+      </li>
+      <li data-value="opcion2">
+        <label
+          for="r-quincenal"
+          class="d-flex justify-content-between align-items-center">
+          <p class="d-flex flex-column m-0">
+            <span class="option-text">Quincenal</span
+            ><small class="text-light-emphasis option-info"
+              >Se realizará cada 15 días</small
+            >
+          </p>
+          <p class="m-0">
+            <input
+              id="r-quincenal"
+              type="radio"
+              name="frecuency"
+              class="check-rounded"
+              value="quincenal" />
+          </p>
+        </label>
+      </li>
+      <li data-value="opcion3">
+        <label
+          for="r-mensual"
+          class="d-flex justify-content-between align-items-center">
+          <p class="d-flex flex-column m-0">
+            <span class="option-text">Mensual</span
+            ><small class="text-light-emphasis option-info"
+              >Se realizará cada 30 días</small
+            >
+          </p>
+          <p class="m-0">
+            <input
+              id="r-mensual"
+              type="radio"
+              name="frecuency"
+              class="check-rounded"
+              value="mensual" />
+          </p>
+        </label>
+      </li>
+    </ul>
   </div>
+  <p id="info-select" class="text-light-emphasis"></p>
 </div>
-<!-- Panel right end -->
+<!-- Select Custom End -->

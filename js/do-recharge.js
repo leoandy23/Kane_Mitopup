@@ -1,6 +1,3 @@
-// Script para select personalizado
-$(document).ready(function () {});
-
 function showSectionContact(sectionNumber) {
   // Mostrar la sección correspondiente al botón clicado
   if (sectionNumber == 1) {

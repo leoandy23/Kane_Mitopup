@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width , initial-scale=1.0" />
+    <title>Mitopup Historial Recarga</title>
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="css/profile.css" />
+    <!-- Bootstrap Personalizado -->
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css"
+      integrity="sha512-ZnR2wlLbSbr8/c9AgLg3jQPAattCUImNsae6NHYnS9KrIwRdcY9DxFotXhNAKIKbAXlRnujIqUWoXXwqyFOeIQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <!-- Navbar Start -->
+
+    <nav class="navbar navbar-expand-lg border-bottom p-2">
+      <div class="container-fluid">
+        <div class="d-flex align-items-center">
+          <a class="navbar-brand" href="#">
+            <img src="img/Logo.png" alt="LogoMitopup" class="mx-5 img-fluid" />
+          </a>
+          <button
+            class="navbar-toggler border-0"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars text-primary"></i>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul
+            class="navbar-nav m-0 me-md-auto mb-2 mb-lg-0 w-100 justify-content-end px-md-5 align-items-md-center">
+            <li class="nav-item my-1 mx-1">
+              <a href="#" class="btn btn-primary shadow-custom"
+                >Hacer recarga</a
+              >
+            </li>
+            <li class="nav-item mx-1">
+              <a class="nav-link" href="#">
+                <i class="bi bi-bell fs-4"></i>
+              </a>
+            </li>
+            <li class="nav-item mx-1">
+              <a class="nav-link" href="#">
+                <i class="bi bi-question-circle fs-4"></i>
+              </a>
+            </li>
+            <li class="nav-item mx-1">
+              <a class="nav-link d-flex align-items-center" href="#">
+                <span class="icon-alpha me-2">C</span>
+                <b>Cristina Rota</b>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+    <!-- Container Start -->
+    <div class="row w-100">
+      <!-- Sidebar Start -->
+      <div class="col-md-1 border-end">
+        <div class="d-flex flex-column" style="height: 65vh">
+          <div class="my-3">
+            <a
+              href="#"
+              class="nav-link text-decoration-none d-flex flex-column align-items-center text-primary"
+              ><i class="bi bi-house fs-4"></i> <span>Inicio</span></a
+            >
+          </div>
+          <div class="my-3">
+            <a
+              href="#"
+              class="nav-link text-decoration-none d-flex flex-column align-items-center"
+              ><i class="fa-solid fa-arrow-right-from-bracket fs-4"></i>
+              <span>Recargas</span></a
+            >
+          </div>
+          <div class="my-3">
+            <a
+              href="#"
+              class="nav-link text-decoration-none d-flex flex-column align-items-center"
+              ><i class="bi bi-gift fs-4"></i> <span>Promos</span></a
+            >
+          </div>
+          <div class="my-3">
+            <a
+              href="#"
+              class="nav-link text-decoration-none d-flex flex-column align-items-center"
+              ><i class="fa-regular fa-circle-user fs-4"></i>
+              <span>Perfil</span></a
+            >
+          </div>
+        </div>
+        <div class="my-2">
+          <a
+            href="#"
+            class="nav-link text-decoration-none d-flex flex-column align-items-center text-danger"
+            ><i class="bi bi-box-arrow-right fs-4"></i>
+            <span class="w-100 text-center">Cerrar Sesión</span></a
+          >
+        </div>
+      </div>
+      <!-- Sidebar End -->
+      <!-- Main Start -->
+      <div
+        class="col-md-11 overflow-y-scroll"
+        id="main-container"
+        style="height: 100vh">
+        <div class="container">
+          <div class="row">
+            <!-- Frame Left Start -->
+            <div class="col-md-4 p-3">
+              <div class="container bg-white rounded p-3">
+                <div class="d-flex flex-column align-items-center">
+                  <span class="icon-alpha-2x">C</span>
+                  <span><b>Cristina Rota</b></span>
+                  <span class="text-light-emphasis"
+                    ><small>Cristina.rota@gmail.com</small></span
+                  >
+                  <span class="text-light-emphasis"
+                    ><small>+52 655212841</small></span
+                  >
+                </div>
+                <hr />
+                <div>
+                  <ul class="list-unstyled">
+                    <li class="border-bottom p-3">
+                      <span
+                        class="profile-set-link text-primary"
+                        data-profsec="0"
+                        >Editar información</span
+                      >
+                    </li>
+                    <li class="border-bottom p-3">
+                      <span class="profile-set-link" data-profsec="1"
+                        >Cambiar PIN de acceso</span
+                      >
+                    </li>
+                    <li class="border-bottom p-3">
+                      <span class="profile-set-link" data-profsec="2"
+                        >Invita a tus amigos</span
+                      >
+                    </li>
+                    <li class="border-bottom p-3">
+                      <span class="profile-set-link" data-profsec="3"
+                        >Métodos de pago</span
+                      >
+                    </li>
+                    <li class="border-bottom p-3">
+                      <span class="profile-set-link" data-profsec="4"
+                        >Notificaciones</span
+                      >
+                    </li>
+                    <li class="border-bottom p-3">
+                      <span class="profile-set-link" data-profsec="5"
+                        >Centro de Ayuda</span
+                      >
+                    </li>
+                    <li class="p-3">
+                      <span
+                        class="profile-set-link d-flex justify-content-between"
+                        data-profsec="6"
+                        >Idioma
+                        <small class="text-light-emphasis"
+                          >Español (MX)</small
+                        ></span
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- Frame Left End -->
+
+            <!-- Frame Right Start -->
+
+            <!-- Frame 0 Start -->
+            <div class="col-md-7 p-3 profile-set-section">
+              <div class="container bg-white rounded p-3">
+                <span><b>Editar información</b></span>
+
+                <div class="my-3">
+                  <div class="my-2">
+                    <label for="name-profile"><small>Nombre</small></label>
+                    <input
+                      type="text"
+                      class="input-data-profile form-control"
+                      name="name-profile"
+                      id="name-profile"
+                      placeholder="Introduce tu nombre"
+                      value="Natalia"
+                      disabled />
+                  </div>
+                  <div class="my-2">
+                    <label for="name-profile"><small>Apellido</small></label>
+                    <input
+                      type="text"
+                      class="input-data-profile form-control"
+                      name="lastname-profile"
+                      id="lastname-profile"
+                      placeholder="Introduce tu apellido"
+                      value="García"
+                      disabled />
+                  </div>
+                  <div class="my-2">
+                    <label for="email-profile"><small>E-mail</small></label>
+                    <input
+                      type="email"
+                      class="input-data-profile form-control"
+                      name="email-profile"
+                      id="email-profile"
+                      placeholder="Introduce el correo"
+                      value="natalia.garcia@gmail.com"
+                      disabled />
+                  </div>
+                  <div class="my-2">
+                    <label for="phone-profile"><small>Teléfono</small></label>
+                    <div class="row my-2">
+                      <div class="col-5 col-md-3 mx-0 pe-0">
+                        <div class="dropdown w-100 pe-2">
+                          <button
+                            class="input-data-profile btn btn-outline-secondary py-1 border-light-subtle dropdown-toggle border w-100 text-black"
+                            type="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                            disabled>
+                            +52 <img src="img/flag-mx.png" alt="flag-mx" />
+                          </button>
+                          <ul class="dropdown-menu list-pais">
+                            <div class="m-2">
+                              <input
+                                type="search"
+                                name=""
+                                id=""
+                                placeholder="Buscar pais"
+                                class="border-light-subtle rounded w-100 p-2" />
+                            </div>
+                            <li class="border-bottom">
+                              <a
+                                class="dropdown-item d-flex justify-content-between"
+                                href="#">
+                                <span
+                                  ><img src="img/flag-mx.png" alt="flag-mx" />
+                                  México</span
+                                >
+                                <span>+52</span>
+                              </a>
+                            </li>
+                            <li class="border-bottom">
+                              <a
+                                class="dropdown-item d-flex justify-content-between"
+                                href="#">
+                                <span
+                                  ><img src="img/flag-mx.png" alt="flag-mx" />
+                                  México</span
+                                >
+                                <span>+52</span>
+                              </a>
+                            </li>
+                            <li class="border-bottom">
+                              <a
+                                class="dropdown-item d-flex justify-content-between"
+                                href="#">
+                                <span
+                                  ><img src="img/flag-mx.png" alt="flag-mx" />
+                                  México</span
+                                >
+                                <span>+52</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col-7 col-md-9 pl-0">
+                        <input
+                          id="phone-profile"
+                          type="text"
+                          class="input-data-profile border rounded border-light-subtle p-1 pb-2 w-100"
+                          placeholder="Introduce el número"
+                          value="655212841"
+                          disabled />
+                      </div>
+                    </div>
+                  </div>
+
+                  <button
+                    id="btn-data-profile"
+                    class="btn btn-primary w-100"
+                    data-pro="e">
+                    Editar información
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- Frame 0 End -->
+
+            <!-- Frame 1 Start -->
+            <div class="col-md-7 p-3 profile-set-section d-none">
+              <!-- Panel de pin actual Start -->
+              <div class="container bg-white rounded p-5">
+                <div class="w-75 mx-auto">
+                  <span class="d-inline-block my-3"
+                    ><b>Cambiar PIN de acceso</b></span
+                  >
+                  <div
+                    class="alert alert-danger d-none"
+                    id="alert-pin-no-confirm">
+                    <i class="fa fa-xmark-circle"></i>
+                    Los PINES no coinciden vuelve a ingresar el NUEVO PIN
+                  </div>
+                  <!-- PIN Panel Start -->
+                  <div id="current-pin-panel">
+                    <div class="rounded shadow p-3">
+                      <p class="text-center">
+                        <small
+                          ><b id="panel-pin-title"
+                            >Introduce tu PIN antiguo</b
+                          ></small
+                        >
+                      </p>
+                      <form
+                        class="d-flex justify-content-around w-50 mx-auto"
+                        id="form-pin">
+                        <input
+                          type="password"
+                          class="input-current-pin input-pin"
+                          maxlength="1"
+                          disabled />
+                        <input
+                          type="password"
+                          class="input-current-pin input-pin"
+                          maxlength="1"
+                          disabled />
+                        <input
+                          type="password"
+                          class="input-current-pin input-pin"
+                          maxlength="1"
+                          disabled />
+                        <input
+                          type="password"
+                          class="input-current-pin input-pin"
+                          maxlength="1"
+                          disabled />
+                      </form>
+
+                      <div class="my-3">
+                        <div
+                          class="my-2 d-flex justify-content-evenly text-primary fw-bold fs-4 align-items-center text-center">
+                          <span class="pin-number" data-numpin="1">1</span>
+                          <span class="pin-number" data-numpin="2">2</span>
+                          <span class="pin-number" data-numpin="3">3</span>
+                        </div>
+                        <div
+                          class="my-5 d-flex justify-content-evenly text-primary fw-bold fs-4 align-items-center text-center">
+                          <span class="pin-number" data-numpin="4">4</span>
+                          <span class="pin-number" data-numpin="5">5</span>
+                          <span class="pin-number" data-numpin="6">6</span>
+                        </div>
+                        <div
+                          class="my-5 d-flex justify-content-evenly text-primary fw-bold fs-4 align-items-center text-center">
+                          <span class="pin-number" data-numpin="7">7</span>
+                          <span class="pin-number" data-numpin="8">8</span>
+                          <span class="pin-number" data-numpin="9">9</span>
+                        </div>
+                        <div
+                          class="my-5 d-flex justify-content-evenly text-primary fw-bold fs-4 align-items-center text-center">
+                          <span class="pin-number" data-numpin="c">C</span>
+                          <span class="pin-number" data-numpin="0">0</span>
+                          <span class="pin-number" data-numpin="b"
+                            ><i class="fa fa-arrow-left fs-6"></i
+                          ></span>
+                        </div>
+                      </div>
+                    </div>
+                    <button
+                      class="my-4 btn btn-primary w-100"
+                      id="btn-current-pin-confirm"
+                      data-typepro="cur"
+                      disabled>
+                      Continuar
+                    </button>
+                  </div>
+                  <!-- PIN Panel End -->
+
+                  <!-- Confirm PIN Panel Start -->
+                  <div id="confirm-pin-panel" class="d-none">
+                    <div class="rounded shadow p-3">
+                      <p class="text-center">
+                        <small><b>Repite el PIN nuevo</b></small>
+                      </p>
+                      <form class="d-flex justify-content-around w-50 mx-auto">
+                        <input
+                          type="password"
+                          class="input-new-confirm-pin input-pin"
+                          maxlength="1"
+                          disabled />
+                        <input
+                          type="password"
+                          class="input-new-confirm-pin input-pin"
+                          maxlength="1"
+                          disabled />
+                        <input
+                          type="password"
+                          class="input-new-confirm-pin input-pin"
+                          maxlength="1"
+                          disabled />
+                        <input
+                          type="password"
+                          class="input-new-confirm-pin input-pin"
+                          maxlength="1"
+                          disabled />
+                      </form>
+
+                      <div class="my-3">
+                        <div
+                          class="my-2 d-flex justify-content-evenly text-primary fw-bold fs-4 align-items-center text-center">
+                          <span class="new-pin-number" data-numpin="1">1</span>
+                          <span class="new-pin-number" data-numpin="2">2</span>
+                          <span class="new-pin-number" data-numpin="3">3</span>
+                        </div>
+                        <div
+                          class="my-5 d-flex justify-content-evenly text-primary fw-bold fs-4 align-items-center text-center">
+                          <span class="new-pin-number" data-numpin="4">4</span>
+                          <span class="new-pin-number" data-numpin="5">5</span>
+                          <span class="new-pin-number" data-numpin="6">6</span>
+                        </div>
+                        <div
+                          class="my-5 d-flex justify-content-evenly text-primary fw-bold fs-4 align-items-center text-center">
+                          <span class="new-pin-number" data-numpin="7">7</span>
+                          <span class="new-pin-number" data-numpin="8">8</span>
+                          <span class="new-pin-number" data-numpin="9">9</span>
+                        </div>
+                        <div
+                          class="my-5 d-flex justify-content-evenly text-primary fw-bold fs-4 align-items-center text-center">
+                          <span class="new-pin-number" data-numpin="c">C</span>
+                          <span class="new-pin-number" data-numpin="0">0</span>
+                          <span class="new-pin-number" data-numpin="b"
+                            ><i class="fa fa-arrow-left fs-6"></i
+                          ></span>
+                        </div>
+                      </div>
+                    </div>
+                    <button
+                      class="my-4 btn btn-primary w-100"
+                      id="btn-new-pin-confirm"
+                      disabled>
+                      Continuar
+                    </button>
+                  </div>
+                  <!-- Confirm PIN Panel End -->
+                </div>
+              </div>
+              <!-- Panel de pin actual End -->
+            </div>
+            <!-- Frame 1 End -->
+
+            <!-- Frame 2 Start -->
+            <div class="col-md-7 p-3 profile-set-section">
+              <div class="alert alert-success d-none" id="alert-copy-clipboard">
+                <i class="fa fa-check-circle me-2"></i>
+                Copiado al portapapeles
+              </div>
+
+              <div class="bg-white rounded p-3 my-3">
+                <span><b>Invita a tus amigos</b></span>
+                <div class="d-flex justify-content-between align-items-center">
+                  <p class="w-50">
+                    Por cada amigo que utilice este código promocional, ambos
+                    obtendrán $3.00 de descuento en sus próxima recarga.
+                  </p>
+                  <span class="d-inline-block w-50 text-center"
+                    ><img src="img/MoneyHand.png" alt=""
+                  /></span>
+                </div>
+                <form class="form-floating">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="code-refer"
+                    placeholder="name@example.com"
+                    value="CRISTINAROTA10" />
+                  <label for="code-refer">Código de referido</label>
+                  <i
+                    class="fa-solid fa-copy position-absolute top-0 end-0 p-3 fs-5 text-primary"
+                    id="btn-copy-clipboard"></i>
+                </form>
+              </div>
+              <div class="bg-white rounded p-3 my-3">
+                <span><b>Historial de invitados</b></span>
+
+                <div class="d-flex justify-content-evenly align-items-center">
+                  <div class="d-flex flex-column align-items-center">
+                    <span class="text-primary fw-bold">$5.00</span>
+                    <span class="text-light-emphasis">Crédito ganado</span>
+                  </div>
+                  <span class="text-light-emphasis"
+                    ><hr class="vertical"
+                  /></span>
+                  <div class="d-flex flex-column align-items-center">
+                    <span class="text-primary fw-bold">7</span>
+                    <span class="text-light-emphasis">Completado</span>
+                  </div>
+                  <span class="text-light-emphasis"
+                    ><hr class="vertical"
+                  /></span>
+                  <div class="d-flex flex-column align-items-center">
+                    <span class="text-primary fw-bold">2</span>
+                    <span class="text-light-emphasis">Pendiente</span>
+                  </div>
+                </div>
+                <hr />
+
+                <div>
+                  <div class="d-flex align-items-center my-2">
+                    <span class="text-primary fs-3 me-2">
+                      <i class="bi bi-person-add"></i>
+                    </span>
+                    <div class="flex-fill d-flex flex-column p-1">
+                      <span>Juliana Suárez</span>
+                      <small
+                        ><span class="text-success"
+                          ><i class="bi bi-check-circle me-1"></i>
+                          Completado</span
+                        ></small
+                      >
+                    </div>
+                    <span class="text-primary"><b>$5.00</b></span>
+                  </div>
+
+                  <div class="d-flex align-items-center my-2">
+                    <span class="text-primary fs-3 me-2">
+                      <i class="bi bi-person-add"></i>
+                    </span>
+                    <div class="flex-fill d-flex flex-column p-1">
+                      <span>Lucía García</span>
+                      <small
+                        ><span class="text-warning"
+                          ><i class="bi bi-check-circle me-1"></i>
+                          Pendiente</span
+                        ></small
+                      >
+                    </div>
+                    <span class="text-primary"><b>$5.00</b></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Frame 2 End -->
+
+            <!-- Frame Right End -->
+          </div>
+        </div>
+      </div>
+      <!-- Main End -->
+    </div>
+    <!-- Container End -->
+
+    <!-- Modal Share Code Start -->
+    <div
+      class="modal fade"
+      id="modal-cancel-recharge"
+      tabindex="-1"
+      aria-labelledby="modal-cancel-rechargeLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content text-center">
+          <div class="modal-header">
+            <h1
+              class="modal-title fs-5 fw-bold w-100"
+              id="modal-cancel-rechargeLabel">
+              ¿Estás seguro?
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Si cancelas, $nombre.usuario dejará de recibir recargas a su
+              operadora móvil.
+            </p>
+            <button class="btn btn-outline-primary w-100">
+              Cancelar recarga
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Share Code End -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+      integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"></script>
+    <script src="lib/bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="js/profile.js"></script>
+  </body>
+</html>
